@@ -20,7 +20,7 @@ const Login = () => {
         signInWithEmailAndPassword,
         user,
         loading,
-        error,
+
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
