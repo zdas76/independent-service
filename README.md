@@ -4,6 +4,8 @@ https://github.com/programming-hero-web-course-4/independent-service-provider-zd
 - 5 menu item
 - loging page
 - signup page
+- varify Email
+- facing so many treble doing this jobs
 
 # Getting Started with Create React App
 
