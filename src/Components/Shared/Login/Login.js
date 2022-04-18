@@ -20,6 +20,7 @@ const Login = () => {
         signInWithEmailAndPassword,
         user,
         loading,
+        error
 
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
@@ -53,6 +54,14 @@ const Login = () => {
         }
     }
 
+    let errorElement;
+    if (error) {
+        errorElement = <div>
+            <p className='text-danger'>Error: {error?.message}</p>
+        </div>
+    }
+
+
     return (
         <div className='container col-md-4 mx-auto my-5'>
             <h1 className='text-center text-primary fw-bold my-5'>Please Login</h1>
@@ -69,7 +78,7 @@ const Login = () => {
                     LogIn
                 </Button>
             </Form>
-
+            {errorElement}
             <p>New User?  <Link to='/signup' className='text-primary text-decoration-none' onClick={navigateRegis} >Please Registration</Link> </p>
             <p>Forget Password?  <button to='/signup' className='btn btn-link text-primary text-decoration-none' onClick={reasetPassword} >Reset Password</button> </p>
             <SocialLogin></SocialLogin>
