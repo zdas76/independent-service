@@ -11,7 +11,7 @@
     padding: 6px 10px;
     border-bottom: 3px solid rgb(147, 159, 244);
     margin: 0 10px;
-    color: rgb(104, 118, 243);
+    color: rgb(232, 221, 133);
     font-size: 16px;
     font-weight: 700;
 }
@@ -19,9 +19,9 @@
 .active-link {
     text-decoration: none;
     padding: 6px 10px;
-    border-bottom: 3px solid rgb(31, 4, 166);
+    border-bottom: 3px solid rgb(234, 233, 238);
     margin: 0 10px;
-    color: blue;
+    color: rgb(239, 239, 245);
     font-size: 20px;
     font-weight: 700;
 }

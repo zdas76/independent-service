@@ -4,11 +4,19 @@ import lawyer from '../../image/lawyer.png'
 const AboutUs = () => {
     return (
         <div className='p-5'>
+            <div className='container fs-4 text my-5'>
+                <p>My Name is <strong>Zibonanando Das</strong></p>
+                <p><strong>My Goal:</strong> My goal is to be a professional web programmer.</p>
+                <p>For achieving my goal I doing hard work. It is not easy to me because i am govt. service holder and also a married person. I have one child. after done all my duties I do practices on web programming. In my office I have to spend 8-9 hours and also spend time for my family. Then I learning web programming. after complete this course i will try to do work in market place. I have an account on upwork and do some work on others platform. I will try to create a professional career on web programming.</p>
+            </div>
             <div className='row'>
+                <h1 className='text-center my-lg-5 fw-bolder'>About Lawyer</h1>
+
                 <div className='col-6'>
                     <img className='img-fluid' src={lawyer} alt="" />
                 </div>
                 <div className='col-6'>
+                    
                     <p style={{textAlign :'justify'}} className='lead'>
                         <h5>Passion for the Job</h5>
                         As a starting point, successful lawyers almost always have a true passion for their job. You have probably heard popular cliches like “choose a job you love and you will never work a day in your life”. Of course, we all know that in the real world it’s not quite that simple. At the same time, there is a wide body of scientific evidence that demonstrates the importance of passion for your work. Some have an already developed enthusiasm for lifelong learning, but as noted by Deloitte, one of the keys to talent development is cultivating worker passion. In other words, people who are passionate about what they are doing are happier, more fulfilled, and they perform better. If you have a passion for serving people and an interest in the law, you should consider applying for admission into law school.

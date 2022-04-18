@@ -1,7 +1,5 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../../firebase.init';
 import carosul1 from '../../../image/carosule/carosul1.jpg'
 import carosul2 from '../../../image/carosule/carosul2.jpg'
 import carosul3 from '../../../image/carosule/carosul3.jpg'

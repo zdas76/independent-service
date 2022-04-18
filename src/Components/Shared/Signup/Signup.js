@@ -1,33 +1,42 @@
+import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import Loding from '../Loding/Loding';
 
 const Signup = () => {
+    const [agree, setAgree] = useState(false);
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true}
+        );
+    const [updateProfile, updating, errorname] = useUpdateProfile(auth);
 
-
-
+    
     const navigate = useNavigate();
 
-    const handleRegister = e => {
+    const handleRegister = async (e) => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        createUserWithEmailAndPassword(email, password)
+        // const agree = e.target.terms.checked;
+        
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
+        
+        navigate('/home');   
     }
     const navigateLogin = e => {
         navigate('/signup')
     }
-
-    if (user) {
-        navigate('/home');
+    if (loading || updating) {
+        return <Loding
+        ></Loding>
     }
     return (
         <div className='container col-md-4 mx-auto my-5'>
@@ -46,14 +55,14 @@ const Signup = () => {
                     <Form.Control type="password" name='password' placeholder="Password" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
+                    <Form.Check onClick={() => setAgree(!agree)} className={agree ? '' : 'text-danger'} type="checkbox" name="terms" label="Terms and Conditions" />
                 </Form.Group>
-                <Button className='w-100' variant="primary" type="submit">
+                <Button disabled={!agree} className='w-100' variant="primary" type="submit">
                     Submit
                 </Button>
             </Form>
 
-            <p>Already Registered?  <Link to='/login' className='text-danger text-decoration-none' onClick={navigateLogin} >Please Login</Link> </p>
+            <p>Already Registered?  <Link to='/login' className='text-primary text-decoration-none' onClick={navigateLogin} >Please Login</Link> </p>
         </div>
     );
 };
