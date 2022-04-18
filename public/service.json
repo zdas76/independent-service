@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Personal Tax Return",
+        "description": "Personal information, such as name, address, Social Security number, and the number of dependents, are asked for on Form 1040. A filer also needs to report wages, salary, taxable interest, capital gains, pensions, Social Security benefits.",
+        "price": "5000",
+        "img": "https://i.ibb.co/fMLxRvn/personal.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Joint Tax Return",
+        "description": "Joint tax return (i.e., married filing jointly filing status) is a single tax return filed by a married couple that had married before the end of the tax year, on which they report their combined income, credits, exemptions and deductions.",
+        "price": "8000",
+        "img": "https://i.ibb.co/8DChZfX/joient.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Corporate Tax Return",
+        "description": "Income tax is levied on residents based on progressive tax rates, which range from 10 percent to 30 percent, while non-residents (except Bangladeshi non-residents) are taxed at the flat rate of 30 percent. I served this very strongly",
+        "price": "1500",
+        "img": "https://i.ibb.co/wMGHFT0/corporate.jpg"
+    }
+]
