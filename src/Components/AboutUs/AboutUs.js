@@ -36,9 +36,6 @@ const AboutUs = () => {
 
                         <h5>Strong Writing Ability</h5>
                         One of the single defining traits that all successful attorneys share is excellent writing skills. Don’t be fooled by the flashy procedurals that are ever popular on television, the vast majority of lawyers spend far more time writing than they do in oral arguments. Successful lawyers must be able to prepare effective, clear, and well-reasoned legal documents. If you want to take action now that will help you become a better lawyer in the future, focus on sharpening your writing skills. An attorney who can tell a compelling story that weaves in all of the relevant facts and arguments is an attorney that will be successful for a long time.<br /> <br />
-
-                        <h5>Creativity</h5>
-                        When you think about the job of an attorney, creativity may not be the first trait that comes to your mind. However, contrary to the popular conceptions of most people, successful attorneys are often highly creative people. The law is not purely a science. There is an art to effective legal practice. Remember, each client that an attorney deals with will have their own unique set of goals, objectives, and concerns. In some cases, ‘outside-the-box’ thinking can help craft a solution that the client may never even realize was possible. Successful lawyers know how to tailor their creativity to suit every situation. All cases should be approached with an open mind.
                     </p>
                 </div>
             </div>
